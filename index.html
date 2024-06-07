@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+</head>
+<body>
+  <nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="logo-image" src="logo.png" alt="Logo" class="img-fluid">
+        </a>
+        <ul class="navbar-nav flex-row ms-auto">
+            <li class="nav-item me-5">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-5">
+                <a class="nav-link" href="Views/services.html">Services</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link" href="Views/team.html">Team</a>
+            </li>
+            <li class="nav-item me-5">
+                <a class="nav-link" href="Views/contact.html">Contact</a>
+            </li>
+        </ul>
+        <button class="btn me-5 book-appointment" onclick="window.location.href='Views/booking.html'">Book Appointment</button>
+    </div>
+</nav>
+
+<div class="container-fluid">
+  <img id="background-image" src="Assets/Home-page.jpg" class="img-fluid" alt="Background Image">
+</div>
+
+
+<div id="home-title" class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="bg-black-alpha p-4 rounded text-center">
+        <h1 class="text-nowrap title-text">THE MANE DEAL</h1>
+        <h2 class="text-white">Ottawa’s hair salon since ‘09</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-12 text-center">
+      <button id="services-home" class="btn btn-primary mt-5" onclick="window.location.href='Views/services.html'">Browse Services</button> <!-- Added mb-3 for margin bottom -->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

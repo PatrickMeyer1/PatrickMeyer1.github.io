@@ -21,6 +21,10 @@ p {
   font-size: 1.4rem;
 }
 
+#logo-image {
+  max-width: 50px;
+}
+
 .card ul li {
   font-size: 1.2rem;
 }
@@ -67,10 +71,14 @@ p {
   height: 90vh;
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.form-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.help-text {
+  font-size: 0.875rem;
+  color: #6c757d;
 }
 
 .title-text {

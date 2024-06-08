@@ -16,8 +16,8 @@
 <body>
   <nav class="navbar bg-dark mb-3">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img id="logo-image" src="logo.png" alt="Logo" class="img-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img id="logo-image" src="../Assets/logo.png" alt="Logo" class="img-fluid">
         </a>
         <ul class="navbar-nav flex-row ms-auto">
             <li class="nav-item me-5">
@@ -37,71 +37,70 @@
     </div>
 </nav>
 
-<div class="container">
-    <h1 class="text-center mb-5 mt-5">Book an Appointment</h1>
-    <form>
-      <div class="row mb-3">
-        <div class="col-md-6">
-          <label for="firstName" class="form-label">First Name</label>
-          <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
-        </div>
-        <div class="col-md-6">
-          <label for="lastName" class="form-label">Last Name</label>
-          <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
-        </div>
+<div class="container form-container mt-5">
+  <h1 class="text-center">Book an Appointment</h1>
+  <form>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="firstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
       </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      <div class="col-md-6">
+        <label for="lastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
       </div>
-      <div class="mb-3">
-        <label for="phone" class="form-label">Phone Number</label>
-        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
-      </div>
-      <div class="mb-3">
-        <label for="stylist" class="form-label">Choose Stylist</label>
-        <select class="form-select" id="stylist" required>
-          <option selected disabled>Select your stylist</option>
-          <option value="Liam Jenning">Liam Jenning</option>
-          <option value="Emily Brown">Emily Brown</option>
-          <option value="Lisa Caufield">Lisa Caufield</option>
-        </select>
-      </div>
-      <div class="mb-3">
-        <label for="service" class="form-label">Choose Service</label>
-        <select class="form-select" id="service" required>
-          <option selected disabled>Select the service</option>
-          <option value="Haircut">Haircut</option>
-          <option value="Coloring">Coloring</option>
-          <option value="Styling">Styling</option>
-          <option value="Shaving">Shaving</option>
-          <option value="Perm">Perm</option>
-          <option value="Straightening">Straightening</option>
-        </select>
-      </div>
-      <div class="mb-3">
-        <label for="date" class="form-label">Appointment Date</label>
-        <input type="date" class="form-control" id="date" required>
-      </div>
-      <div class="mb-3">
-        <label for="time" class="form-label">Appointment Time</label>
-        <input type="time" class="form-control" id="time" required>
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Special Requests</label>
-        <textarea class="form-control" id="message" rows="3" placeholder="Enter any special requests"></textarea>
-      </div>
-      <div class="mt-3 button-center">
-        <button type="submit" class="btn complete-booking" onclick="window.location.href='confirmation.html'">Complete Booking</button>
-      </div>
-      <div class="row mt-4">
-        <div class="col-12">
-          <div style="height: 1rem;"></div>
-        </div>
-      </div>
-    </form>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+    </div>
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+    </div>
+    <div class="mb-3">
+      <label for="stylist" class="form-label">Choose Stylist</label>
+      <select class="form-select" id="stylist" required>
+        <option selected disabled>Select your stylist</option>
+        <option value="Liam Jenning">Liam Jenning</option>
+        <option value="Emily Brown">Emily Brown</option>
+        <option value="Lisa Caufield">Lisa Caufield</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="service" class="form-label">Choose Services</label>
+      <select class="form-select" id="service" multiple required>
+        <option value="Haircut">Haircut</option>
+        <option value="Coloring">Coloring</option>
+        <option value="Styling">Styling</option>
+        <option value="Shaving">Shaving</option>
+        <option value="Perm">Perm</option>
+        <option value="Straightening">Straightening</option>
+      </select>
+      <small class="form-text text-muted">Hold down the Ctrl (Windows) or Command (Mac) button to select multiple options.</small>
+    </div>
+    <div class="mb-3">
+      <label for="date" class="form-label">Appointment Date</label>
+      <input type="date" class="form-control" id="date" required>
+    </div>
+    <div class="mb-3">
+      <label for="time" class="form-label">Appointment Time</label>
+      <input type="time" class="form-control" id="time" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Special Requests</label>
+      <textarea class="form-control" id="message" rows="3" placeholder="Enter any special requests"></textarea>
+    </div>
+    <div class="mt-3 button-center">
+      <button type="submit" class="btn complete-booking" onclick="window.location.href='confirmation.html'">Complete Booking</button>
+    </div>
+  </form>
+  <div class="row mt-4">
+    <div class="col-12">
+      <div style="height: 0.5rem;"></div> 
+    </div>
   </div>
-  
+</div>
 
 </body>
 </html>

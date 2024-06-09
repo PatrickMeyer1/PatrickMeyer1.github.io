@@ -35,23 +35,23 @@
   </nav>
   <div class="container form-container mt-5">
     <h1 class="text-center">Book an Appointment</h1>
-    <form>
+    <form action = "confirmation.html">
       <div class="row mb-3">
         <div class="col-md-6">
-          <label for="firstName" class="form-label">First Name</label> <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required="">
+          <label for="firstName" class="form-label">First Name</label> <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
         </div>
         <div class="col-md-6">
-          <label for="lastName" class="form-label">Last Name</label> <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required="">
+          <label for="lastName" class="form-label">Last Name</label> <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
         </div>
       </div>
       <div class="mb-3">
-        <label for="email" class="form-label">Email address</label> <input type="email" class="form-control" id="email" placeholder="Enter your email" required="">
+        <label for="email" class="form-label">Email address</label> <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
       </div>
       <div class="mb-3">
-        <label for="phone" class="form-label">Phone Number</label> <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required="">
+        <label for="phone" class="form-label">Phone Number</label> <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
       </div>
       <div class="mb-3">
-        <label for="stylist" class="form-label">Choose Stylist</label> <select class="form-select" id="stylist" required="">
+        <label for="stylist" class="form-label">Choose Stylist</label> <select class="form-select" id="stylist" required>
           <option selected disabled>
             Select your stylist
           </option>
@@ -67,7 +67,7 @@
         </select>
       </div>
       <div class="mb-3">
-        <label for="service" class="form-label">Choose Services</label> <select class="form-select" id="service" multiple required="">
+        <label for="service" class="form-label">Choose Services</label> <select class="form-select" id="service" multiple required>
           <option value="Haircut">
             Haircut
           </option>
@@ -89,17 +89,17 @@
         </select> <small class="form-text text-muted">Hold down the <kbd>Ctrl (Windows)</kbd> or <kbd>Command (Mac)</kbd> button to select multiple options.</small>
       </div>
       <div class="mb-3">
-        <label for="date" class="form-label">Appointment Date</label> <input type="date" class="form-control" id="date" required="">
+        <label for="date" class="form-label">Appointment Date</label> <input type="date" class="form-control" id="date" required>
       </div>
       <div class="mb-3">
-        <label for="time" class="form-label">Appointment Time</label> <input type="time" class="form-control" id="time" required="">
+        <label for="time" class="form-label">Appointment Time</label> <input type="time" class="form-control" id="time" required>
       </div>
       <div class="mb-3">
         <label for="message" class="form-label">Special Requests</label> 
         <textarea class="form-control" id="message" rows="3" placeholder="Enter any special requests"></textarea>
       </div>
       <div class="mt-3 button-center">
-        <button type="submit" class="btn complete-booking" onclick="window.location.href='confirmation.html'">Complete Booking</button>
+        <button type="submit" class="btn complete-booking">Complete Booking</button>
       </div>
     </form>
     <div class="row mt-4">
